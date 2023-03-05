@@ -17,6 +17,9 @@ nav {
     background: #214566;
     height: 80px;
     width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 label.logo {
@@ -33,6 +36,7 @@ nav ul{
     display: inline-block;
     padding-right: 20px;
     font-weight: bold;
+    position: -webkit-sticky;
 }
 
 nav ul li {
@@ -105,14 +109,49 @@ a.active,a:hover {
     }
 
     a:hover,a.active{
-        background: none;
-        color: #0082e6;
+        background: #214566;
+        color: #cacaca;
     }
     #check:checked ~ ul{
         left: 0;
     }
 }
+
+.active:hover {
+    background-color: #2c3e50;
+    border-right: groove;
+    border-color: #2c3e50
+}
 section{
     background-color: aliceblue;
 }
 
+.intro {
+    background-color: #a7d691;
+    margin: 20px 20px;
+    text-align: left;
+    padding: 25px 25px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+.about {
+    background-color: #a7d691;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+.about.p:hover {
+ cursor: text;
+}
+
+
+.bottom {
+
+    height: 200px;
+    border-color: aqua;
+    position: relative;
+}
