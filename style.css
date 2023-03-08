@@ -120,12 +120,23 @@ a.active,a:hover {
 .dropdown {
     position: relative;
     display: inline-block;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    background-color: #2f7bb6;
+    
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
     z-index: 1;
+    color: #000000;
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -161,7 +172,6 @@ section{
 .about.p:hover {
  cursor: text;
 }
-
 
 .bottom {
 
